@@ -13,7 +13,7 @@ interface IViteAssetsLoader
     /**
      * @param ViteEntryPoint[] $entryPoints
      * @param bool $isAdmin
-     * @param array<string|IWpEnqueueScriptModuleDep|IAssetDependency> $dependencies
+     * @param array<IWpEnqueueScriptModuleDep|IAssetDependency> $dependencies
      * @return void
      */
     public function connect(array $entryPoints, bool $isAdmin = false, array $dependencies = []): void;
