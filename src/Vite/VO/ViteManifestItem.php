@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LunaPress\FrontendContracts\Vite\DTO;
+namespace LunaPress\FrontendContracts\Vite\VO;
 
 final readonly class ViteManifestItem
 {

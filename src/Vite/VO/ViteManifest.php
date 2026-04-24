@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LunaPress\FrontendContracts\Vite\DTO;
+namespace LunaPress\FrontendContracts\Vite\VO;
 
 final readonly class ViteManifest
 {
@@ -12,5 +12,10 @@ final readonly class ViteManifest
     public function __construct(
         public array $items = [],
     ) {
+    }
+
+    public function getItem(string $name): ?ViteManifestItem
+    {
+        return $this->items[$name] ?? null;
     }
 }
